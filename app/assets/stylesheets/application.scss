@@ -13,3 +13,41 @@
 @import "layouts/index";
 @import "components/index";
 @import "pages/index";
+@import "music/index";
+@import "pages/videos";
+@import "videos/index";
+
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+* {
+  font-family: Helvetica;
+  text-decoration: none;
+}
+
+*:hover {
+  text-decoration: none;
+}
+
+p:hover {
+  text-decoration: none;
+}
+
+body {
+  background-color: #041526;
+}
+
+.row {
+  background-size: cover;
+  text-align: center;
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: black;
+  }
+}
+/* Build your own button classes ! */

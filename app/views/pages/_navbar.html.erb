@@ -1,0 +1,17 @@
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="logo" href="/home">
+    <%= link_to home_path do %>
+      <%= image_tag "ouroboros-xs-w.png", id: "ouroboros" %>
+    <% end %>
+    </div>
+    <div class="navbar-header" href="/home">
+      <%= link_to "Alex Weird", home_path, class: "navbar-brand" %>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><%= link_to "Videos", videos_path %></li>
+      <li><%= link_to "Music", music_path %></li>
+      <li><%= link_to "Photography", photography_path %></li>
+    </ul>
+  </div>
+</nav>

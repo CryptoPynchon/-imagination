@@ -1,0 +1,12 @@
+<div class="show-container">
+  <h4 style="color:#fefcff"><%= @video.title %></h4>
+  <h5 style="color:#fefcff"><%= @video.subtitle %></h5>
+  <iframe width="560" height="315" src="<%= @video.url %>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <div class="description">
+    <p style="color:#fefcff"><%= @video.description %></p>
+  </div>
+  <ul class="list-inline">
+    <li><%= link_to "Back", videos_path, class: "btn-large" %></li>
+    <li><%= link_to "Home", home_path, class: "btn-large" %></li>
+  </ul>
+</div>

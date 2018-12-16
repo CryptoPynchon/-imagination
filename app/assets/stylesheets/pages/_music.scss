@@ -1,0 +1,28 @@
+.music-container {
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#aw-card {
+  background-image: url("angels.JPG");
+  background-size: cover;
+}
+
+#aw-card:hover {
+  background-image: url("annihilation.png");
+  background-size: cover;
+  background-repeat:   no-repeat;
+  background-position: 0% 0%;
+}
+
+#om-card {
+  background-image: url("lilia.png");
+  background-size: cover;
+}
+
+#om-card:hover {
+  background-image: url('OM_BLUR.jpg');
+  background-size: cover;
+}
