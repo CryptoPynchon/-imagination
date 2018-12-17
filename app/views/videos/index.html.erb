@@ -1,36 +1,34 @@
 <div class="content">
   <div class="cards-container">
-    <div class="row">
+    <div class="row" id="video-essays">
       <h4 style="color:#fefcff">Video Essays</h4>
-      <% @videos.each do |vid| %>
-        <% if vid.genre == "Video Essay" %>
+      <% @video_essays.each do |vid| %>
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+              <a href="<%= video_path(vid) %>" class="vid-card" style="background-image: url(<%= image_path vid.thumbnail, style: "width: 100%;"%>);">
+              </a>
+            <p><%= vid.title %></p>
+          </div>
+      <% end %>
+    </div>
+    <div class="row" id="shitposts">
+      <h4 style="color:#fefcff">shitposts</h4>
+      <% @shitposts.each do |vid| %>
+          <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+              <a href="<%= video_path(vid) %>" class="vid-card" style="background-image: url(<%= image_path vid.thumbnail, style: "width: 100%;"%>);">
+              </a>
+            <p><%= vid.title %></p>
+          </div>
+      <% end %>
+    </div>
+    <div class="row" id="time-sculptures">
+      <h4 style="color:#fefcff">time sculptures</h4>
+      <% @time_sculptures.each do |vid| %>
           <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
               <a href="<%= video_path(vid) %>" class="vid-card" style="background-image: url(<%= image_path vid.thumbnail, style: "width: 100%;"%>);">
               </a>
-              <p><%= vid.title %></p>
+            <p><%= vid.title %></p>
           </div>
-        <% else %>
-          <% puts "ya baby" %>
-        <% end %>
       <% end %>
     </div>
   </div>
-  <div class="row">
-      <h4 style="color:#fefcff">shitposts</h4>
-  </div>
 </div>
- <!--  <div class="shitposts">
-    <h4>shitposts</h4>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/HjFG_5hdLK8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/huqDjCPQD84" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/R6ZJObB59XE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/yGvEqVTEaEI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/WnaMycg067E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/IVorWhPsY5I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/WO0sFl5e-6U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/weeJZudU7pU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/ac4I2DXxaG4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/zoYBmlNBtaY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/88o3UeX0Zb0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </div>
-</div> -->

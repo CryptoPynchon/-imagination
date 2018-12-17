@@ -1,7 +1,17 @@
 .content {
   display: flex;
 }
-
+h4 {
+  margin-top: 10px;
+}
+.row [class^="col-"] {
+  display: inline-block;
+  vertical-align: top;
+  letter-spacing: 0;
+  font-size: 14px;
+  float: none;
+  margin-bottom: 10px;
+}
 .vid-card {
   color: white;
   font-size: 50px;
@@ -11,8 +21,8 @@
   height: 240px;
   width: 360px;
   border-radius: 1px;
-  margin-top: 50px;
-  margin-bottom: 25px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
   display: flex;
   align-items: center;
@@ -32,4 +42,17 @@ ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
+}
+
+#video-essays {
+
+}
+
+#shitposts {
+  border: 1px;
+  background-color: #1C232B;
+}
+
+#time-sculptures {
+
 }

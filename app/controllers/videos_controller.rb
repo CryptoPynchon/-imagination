@@ -1,7 +1,11 @@
 class VideosController < ApplicationController
   def index
-    @videos = Video.all
-    @videos
+    @video_essays = Video.where("genre = 'Video Essay'")
+    @time_sculptures = Video.where("genre = 'time sculptures'")
+    @shitposts = Video.where("genre = 'shitpost'")
+    @video_essays
+    @time_sculptures
+    @shitposts
   end
 
   def show

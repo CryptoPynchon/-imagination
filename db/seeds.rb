@@ -5,16 +5,31 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+t = Time.now   #=> 2007-11-19 08:27:51 -0600         #=> 2007
+
 puts "Cleaning..."
 
 Video.destroy_all
 
 puts "Creating..."
 
-# https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=&key={YOUR_API_KEY}
-
-
 Video.create(title: "Fancy Lad & Defamiliarization", url: "https://www.youtube.com/embed/dfcGetckPUs", thumbnail: "http://i3.ytimg.com/vi/dfcGetckPUs/hqdefault.jpg", description: "A love letter to skateboarding as a form of revitalizing thought.", genre: "Video Essay")
 Video.create(title: "Fractal Violence", url: "https://www.youtube.com/embed/mIlXsNGS3HQ", thumbnail: "http://i3.ytimg.com/vi/mIlXsNGS3HQ/hqdefault.jpg", description: "Parasitism is the will of God. At every scale of existence, the universe drives along a cosmic process of Digestion. Sacrificial Order. No matter how far you zoom in or out, the selfsame pattern of consumption emerges like a Fractal of Violence.", genre: "Video Essay")
 Video.create(title: "A Defence of Troy & Britta", url: "https://www.youtube.com/embed/-1L5hhi_9U0", thumbnail: "http://i3.ytimg.com/vi/-1L5hhi_9U0/hqdefault.jpg", description: "Character analysis. I argue that Britta & Troy have a compelling romance because they discover hidden parts of one another and blossom together.",genre: "Video Essay")
 Video.create(title: "Community - The Kiss", url: "https://www.youtube.com/embed/KsRFYVjxxrg", thumbnail: "http://i3.ytimg.com/vi/KsRFYVjxxrg/hqdefault.jpg", description: "I examine the confusing romantic mechanics behind Annie's kiss with Abed/Han(Jeff) in For A Few Paintballs More.", genre: "Video Essay")
+Video.create(title: "Jean-Ralphio & Mona-Lisa Plunderphonics Remix", url: "https://www.youtube.com/embed/R6ZJObB59XE", thumbnail: "http://i3.ytimg.com/vi/R6ZJObB59XE/hqdefault.jpg", description: "My favourite manic pixie scumbags.", genre: "shitpost")
+Video.create(title: "Future Endorses Napping For Childhood Development", url: "https://www.youtube.com/embed/WnaMycg067E", thumbnail: "http://i3.ytimg.com/vi/WnaMycg067E/hqdefault.jpg", description: "What happens kindergarteners sip that lean.", genre: "shitpost")
+Video.create(title: "Drake Is Talking Teens", url: "https://www.youtube.com/embed/yGvEqVTEaEI", thumbnail: "http://i3.ytimg.com/vi/yGvEqVTEaEI/hqdefault.jpg", description: "so relatable", genre: "shitpost")
+Video.create(title: "Sense of Right Alliance (#{t.year})", url: "https://www.youtube.com/embed/IVorWhPsY5I", thumbnail: "http://i3.ytimg.com/vi/IVorWhPsY5I/hqdefault.jpg", description: "When an unparalleled force threatens the galaxy, only six incredible individuals with a vague Sense of Right have the power to stop it. Can they learn to overcome their demons and embrace their differences to unite at their best? Or will they succumb to their Sense of Wrong?", genre: "shitpost")
+Video.create(title: "Vin Diesel Hits On Me", url: "https://www.youtube.com/embed/huqDjCPQD84", thumbnail: "http://i3.ytimg.com/vi/huqDjCPQD84/hqdefault.jpg", description: "Flattery will get you everywhere.", genre: "shitpost")
+Video.create(title: "THEN VS. NOW - DEWEY MALCOM IN THE MIDDLE #{t.year} - SKATEBOARDER? - LITERALLY UNBELIEVABLE", url: "https://www.youtube.com/embed/WO0sFl5e-6U", thumbnail: "http://i3.ytimg.com/vi/WO0sFl5e-6U/hqdefault.jpg", description: "WOW! SO TALENTED! WHO KNEW DEWEY MALCOM IN THE MIDDLE WAS SKATEBOARD? LIKE AND SHARE!", genre: "shitpost")
+Video.create(title: "she hyucc me", url: "https://www.youtube.com/embed/weeJZudU7pU", thumbnail: "http://i3.ytimg.com/vi/weeJZudU7pU/hqdefault.jpg", description: "all the 'she hyucc me' renditions i've heard are too loud and energetic. they don't convey the hushed, intimate sexual gravity i think is truer to the phrase.", genre: "shitpost")
+Video.create(title: "Robin Williams farts in a can and gets a little boy to sniff it", url: "https://www.youtube.com/embed/zoYBmlNBtaY", thumbnail: "http://i3.ytimg.com/vi/zoYBmlNBtaY/hqdefault.jpg", description: "v hot stuff", genre: "shitpost")
+Video.create(title: "LOTR ASMR - Denethor Mukbang", url: "https://www.youtube.com/embed/ac4I2DXxaG4", thumbnail: "http://i3.ytimg.com/vi/ac4I2DXxaG4/hqdefault.jpg", description: "triggers: chewing, popping, squirting, wet and sticky mouth sounds", genre: "shitpost")
+Video.create(title: "Existential Crisis - What it feels like to have DPDR", url: "https://www.youtube.com/embed/HjFG_5hdLK8", thumbnail: "http://i3.ytimg.com/vi/HjFG_5hdLK8/hqdefault.jpg", description: "$I Am A Strange Loop", genre: "time sculptures")
+Video.create(title: "NGE - Every Time Asuka Goes 'EHHH!?'", url: "https://www.youtube.com/embed/ZfmjOFder5Y", thumbnail: "http://i3.ytimg.com/vi/ZfmjOFder5Y/hqdefault.jpg", description: "please let me know if i missed any. there are a few instances where she speaks in the same upward incredulous tone, but I specifically want the inarticulate 'EHH!?' and 'mmm?'
+", genre: "time sculptures")
+Video.create(title: "The Definitive Radical Edward Compilation", url: "https://www.youtube.com/embed/HRid-B5xqlA", thumbnail: "http://i3.ytimg.com/vi/HRid-B5xqlA/hqdefault.jpg", description: "20 minutes of Radical Edward's non-sequiturs and manic fun. Shout out to Melissa Fahn for bringing Edward to life with only her voice.", genre: "time sculptures")
+Video.create(title: "Jamie Thomas Chomp On This Remix", url: "https://www.youtube.com/embed/vp4_tMs0FBs", thumbnail: "http://i3.ytimg.com/vi/vp4_tMs0FBs/hqdefault.jpg", description: "Had to manually edit in the diegetic noises from other skate videos as there was no raw footy to work with.", genre: "time sculptures")
+Video.create(title: "Deadline", url: "https://www.youtube.com/embed/fCeNL0dkORc", thumbnail: "http://i3.ytimg.com/vi/fCeNL0dkORc/hqdefault.jpg", description: "A meditation on procrastination, frustration, and the creative process, 'Deadline' has stymied author Arthur Writus escape to the wilderness to clear his mind. Soon after, Arthur finds himself lost and injured... But is he alone? Tapping into his primal self, sanity gives way to survival and Arthur learns that perhaps it's better that something be out there than nothing at all. Winner of Dead North Film Festival 2016's 'Best Use of Dialog Constraint'", genre: "time sculptures")
+puts "Cortana, take us home."
