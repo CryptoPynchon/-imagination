@@ -8,6 +8,8 @@ Rails.application.routes.draw do
   get 'pages/music', to: 'pages#music'
   get '/photography', to: 'pages#photography'
   get 'pages/photography', to: 'pages#photography'
+  get '/rhyparography', to: 'pages#rhyparography'
+  get 'pages/rhyparography', to: 'pages#rhyparography'
   get '/social', to: 'pages#social'
   get 'pages/social', to: 'pages#social'
   resources :videos, only: [:index, :show]

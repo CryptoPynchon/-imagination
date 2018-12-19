@@ -14,6 +14,9 @@ class PagesController < ApplicationController
     @photographs
   end
 
+  def rhyparography
+  end
+
   def social
   end
 
