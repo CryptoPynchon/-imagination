@@ -10,10 +10,34 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_12_12_191018) do
+ActiveRecord::Schema.define(version: 2018_12_18_232828) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "albums", force: :cascade do |t|
+    t.string "name"
+    t.text "description"
+    t.string "cover"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "photographs", force: :cascade do |t|
+    t.string "url"
+    t.string "caption"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "photos", force: :cascade do |t|
+    t.string "url"
+    t.string "caption"
+    t.bigint "album_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["album_id"], name: "index_photos_on_album_id"
+  end
 
   create_table "videos", force: :cascade do |t|
     t.string "url"
@@ -26,4 +50,5 @@ ActiveRecord::Schema.define(version: 2018_12_12_191018) do
     t.string "subtitle"
   end
 
+  add_foreign_key "photos", "albums"
 end

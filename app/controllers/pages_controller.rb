@@ -10,6 +10,8 @@ class PagesController < ApplicationController
   end
 
   def photography
+    @photographs = Photograph.all
+    @photographs
   end
 
   def social

@@ -10,6 +10,7 @@ t = Time.now   #=> 2007-11-19 08:27:51 -0600         #=> 2007
 puts "Cleaning..."
 
 Video.destroy_all
+Photograph.destroy_all
 
 puts "Creating..."
 
@@ -32,4 +33,42 @@ Video.create(title: "NGE - Every Time Asuka Goes 'EHHH!?'", url: "https://www.yo
 Video.create(title: "The Definitive Radical Edward Compilation", url: "https://www.youtube.com/embed/HRid-B5xqlA", thumbnail: "http://i3.ytimg.com/vi/HRid-B5xqlA/hqdefault.jpg", description: "20 minutes of Radical Edward's non-sequiturs and manic fun. Shout out to Melissa Fahn for bringing Edward to life with only her voice.", genre: "time sculptures")
 Video.create(title: "Jamie Thomas Chomp On This Remix", url: "https://www.youtube.com/embed/vp4_tMs0FBs", thumbnail: "http://i3.ytimg.com/vi/vp4_tMs0FBs/hqdefault.jpg", description: "Had to manually edit in the diegetic noises from other skate videos as there was no raw footy to work with.", genre: "time sculptures")
 Video.create(title: "Deadline", url: "https://www.youtube.com/embed/fCeNL0dkORc", thumbnail: "http://i3.ytimg.com/vi/fCeNL0dkORc/hqdefault.jpg", description: "A meditation on procrastination, frustration, and the creative process, 'Deadline' has stymied author Arthur Writus escape to the wilderness to clear his mind. Soon after, Arthur finds himself lost and injured... But is he alone? Tapping into his primal self, sanity gives way to survival and Arthur learns that perhaps it's better that something be out there than nothing at all. Winner of Dead North Film Festival 2016's 'Best Use of Dialog Constraint'", genre: "time sculptures")
+
+Photograph.create(url:"https://i.imgur.com/Ap1oYxp.jpg")
+Photograph.create(url:"https://i.imgur.com/4kmzoqs.jpg")
+Photograph.create(url:"https://i.imgur.com/KkQaACM.jpg", caption: "fashion")
+Photograph.create(url:"https://i.imgur.com/XQBS2ZK.jpg", caption: "babs")
+Photograph.create(url:"https://i.imgur.com/WwXbuv9.jpg", caption: "Sean Malto, Front Crook, Amsterdam")
+Photograph.create(url:"https://i.imgur.com/BX4rqmj.jpg")
+Photograph.create(url:"https://i.imgur.com/j5GEsW5.jpg", caption: "Nancy")
+Photograph.create(url:"https://i.imgur.com/CF9Tr3y.jpg", caption: "Siku")
+Photograph.create(url:"https://i.imgur.com/thb8znE.jpg", caption: "paint the sky with our love")
+Photograph.create(url:"https://i.imgur.com/t83cari.jpg", caption: "peace in paris")
+Photograph.create(url:"https://i.imgur.com/4pYOOIE.jpg", caption: "you already know what the fuck is up")
+Photograph.create(url:"https://i.imgur.com/r9VJ0Wu.jpg", caption: "haunted")
+Photograph.create(url:"https://i.imgur.com/GH5OjdQ.jpg", caption: "beckoning")
+Photograph.create(url:"https://i.imgur.com/svnRrhR.jpg", caption: "saturated pleasure")
+Photograph.create(url:"https://i.imgur.com/mKF64hX.jpg", caption: "texture")
+Photograph.create(url:"https://i.imgur.com/DXPPkfF.jpg", caption: "raccoon street art")
+Photograph.create(url:"https://i.imgur.com/NYv06Wz.jpg", caption: "jet broat")
+Photograph.create(url:"https://i.imgur.com/RET4G3X.jpg", caption: "danger")
+Photograph.create(url:"https://i.imgur.com/ab6WPVR.jpg", caption: "claimed")
+Photograph.create(url:"https://i.imgur.com/kbTJ1VV.jpg", caption: "alternate perspective")
+Photograph.create(url:"https://i.imgur.com/CvJsnQx.jpg", caption: "cotton candy sky")
+Photograph.create(url:"https://i.imgur.com/wrQ2g5w.jpg", caption: "cursed couch")
+Photograph.create(url:"https://i.imgur.com/UCaYpp0.jpg", caption: "quiet burn")
+Photograph.create(url:"https://i.imgur.com/YhWQprq.jpg", caption: "heaven is earth")
+Photograph.create(url:"https://i.imgur.com/mHEaaNE.jpg", caption: "old man anime shirt")
+Photograph.create(url:"https://i.imgur.com/nfTJVOt.jpg", caption: "twisted in the fall")
+Photograph.create(url:"https://i.imgur.com/vm7RTFH.jpg", caption: "robertson headframe barren expanse")
+Photograph.create(url:"https://i.imgur.com/gmoPqhb.jpg", caption: "snow glowing warmly")
+Photograph.create(url:"https://i.imgur.com/tGUGS4R.jpg", caption: "streaky: friendship energy")
+Photograph.create(url:"https://i.imgur.com/n986bzo.jpg", caption: "paradise")
+Photograph.create(url:"https://i.imgur.com/63P49n4.jpg", caption: "royalty")
+Photograph.create(url:"https://i.imgur.com/GZ8xiXQ.jpg", caption: "dj big kim")
+Photograph.create(url:"https://i.imgur.com/pxWRHf1.jpg", caption: "")
+Photograph.create(url:"https://i.imgur.com/umyXf4G.jpg", caption: "lush moss")
+Photograph.create(url:"https://i.imgur.com/Ijtxm10.jpg", caption: "idyllic")
+Photograph.create(url:"https://i.imgur.com/5STm0T8.jpg", caption: "frosted fragments")
+
 puts "Cortana, take us home."
