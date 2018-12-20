@@ -17,6 +17,9 @@ class PagesController < ApplicationController
   def rhyparography
   end
 
+  def writings
+  end
+
   def social
   end
 
