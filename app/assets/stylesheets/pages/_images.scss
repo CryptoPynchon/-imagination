@@ -1,0 +1,29 @@
+.image-card {
+  height: 280px;
+  width: 370px;
+  margin: 10px;
+  background-size: 100%;
+}
+
+.image-row {
+  display: flex;
+  justify-content: center;
+}
+
+#photos-card {
+  background-image: url("https://i.imgur.com/XQBS2ZK.jpg");
+}
+
+#graphics-card {
+  background-image: url("https://i.imgur.com/OVaBq2f.jpg");
+  p {
+    color: black;
+  }
+}
+
+#drawings-card {
+  p {
+    color: black;
+  }
+  background-image: url("https://i.imgur.com/GT7oS6l.jpg");
+}

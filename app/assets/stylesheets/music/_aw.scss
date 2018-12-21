@@ -1,13 +1,17 @@
 .aw-container {
   justify-content: center;
-  .col-md-3 {
-    margin: 15px;
+}
+
+@media (min-width: 800px) {
+  .aw-tracklist {
+    margin-left: 135px;
+    justify-content: space-around;
   }
-  .row {
-  display: flex;
-  justify-content: center;
 }
-}
+
 .aw-track {
-  margin: 20px;
+  margin-right: 50px;
+}
+
+#sunset-laughter {
 }
