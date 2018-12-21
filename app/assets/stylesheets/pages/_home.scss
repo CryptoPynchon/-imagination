@@ -1,20 +1,21 @@
 .home-container {
-  display: flex;
   position: relative;
   justify-content: center;
 }
-.face {
-  position: absolute;
-  left: 25px;
+
+#face {
+  display: block;
+  margin-left: 25px;
 }
+
 .bio {
   position: absolute;
-  top: 200px;
+  float: left;
+  margin-left: 25px;
   h4, h5 {
     text-align: left;
   }
   p {
     text-align: left !important;
   }
-  width: 700px;
 }
