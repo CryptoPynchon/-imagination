@@ -16,15 +16,22 @@
   background-size: cover;
   background-repeat:   no-repeat;
   background-position: 0% 0%;
+  p {
+    display: none;
+  }
 }
 
 #om-card {
   background: image-url("lilia2.png");
-  background-size: cover;
+  background-position: -50px;
   margin: 20px;
+  position: relative;
 }
 
 #om-card:hover {
   background: image-url('OM_BLUR.jpg');
   background-size: cover;
+  p {
+    display: none;
+  }
 }
