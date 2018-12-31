@@ -1,31 +1,27 @@
 .home-container {
-  position: relative;
   display: flex;
-  justify-content: left;
+  justify-content: center;
   text-align: justify;
 }
 
 #face {
-  display: block;
   margin-left: 25px;
 }
 
 .bio {
-  width: 700px;
-  position: absolute;
+  display: block;
   margin-left: 25px;
-  h4, h5 {
-    text-align: left;
-  }
-  p {
-    text-align: left !important;
-  }
+  width: 700px;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
 }
 .links {
   display: flex;
   width: 300px;
   justify-content: space-between;
-  float: left;
   margin-left: 3px;
   margin-bottom: 25px;
 }

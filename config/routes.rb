@@ -12,14 +12,8 @@ Rails.application.routes.draw do
   get '/photos', to: 'images#photos'
   get 'images/graphics', to: 'images#graphics'
   get '/graphics', to: 'images#graphics'
-  get 'images/drawings', to: 'images#drawings'
-  get 'drawings', to: 'images#drawings'
-  get '/rhyparography', to: 'pages#rhyparography'
-  get 'pages/rhyparography', to: 'pages#rhyparography'
   get 'writings', to: 'pages#writings'
   get 'pages/writings', to: 'pages#writings'
-  get '/social', to: 'pages#social'
-  get 'pages/social', to: 'pages#social'
   resources :videos, only: [:index, :show]
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

@@ -1,7 +1,4 @@
 class ImagesController < ApplicationController
-  def drawings
-  end
-
   def photos
     @photographs = Photograph.where("category IS NULL")
     @photographs
