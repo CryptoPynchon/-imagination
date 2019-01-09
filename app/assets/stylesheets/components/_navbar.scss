@@ -24,6 +24,7 @@
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
   display: none;
+  font-size: 50px;
 }
 
 /* Dropdown container - needed to position the dropdown content */
@@ -94,8 +95,7 @@
   }
   .topnav a.icon {
     position: absolute;
-    right: 20px;
-    top: 20px;
+    right: 10px;
     float: right;
     display: block;
   }
