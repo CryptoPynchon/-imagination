@@ -11,7 +11,9 @@ class VideosController < ApplicationController
   end
 
   def show
+    @parent = "/videos"
     @video = Video.find(params[:id])
+    @parent
     @video
   end
 end
