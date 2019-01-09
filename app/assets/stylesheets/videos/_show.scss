@@ -1,15 +1,14 @@
 .show-container {
-  height: 100vh;
   display: flex;
   align-items: center;
   flex-direction: column;
+  padding: 50px;
 }
 
 .description {
   text-align: center;
   padding: 25px;
   display: block;
-  width: 800px;
 }
 
 .navigation {
