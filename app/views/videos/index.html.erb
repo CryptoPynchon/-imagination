@@ -1,7 +1,7 @@
 <div class="content">
   <div class="cards-container">
-    <div class="row" id="video-essays">
-      <h4 style="color:#fefcff">essays</h4>
+    <div class="row odd" id="video-essays">
+      <h4 style="color:#fefcff">essays 🧚‍♀️</h4>
       <% @video_essays.each do |vid| %>
           <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
               <a href="<%= video_path(vid) %>" class="vid-card" style="background-image: url(<%= image_path vid.thumbnail, style: "width: cover;"%>);">
@@ -10,8 +10,18 @@
           </div>
       <% end %>
     </div>
-    <div class="row" id="time-sculptures">
-      <h4 style="color:#fefcff">time sculptures</h4>
+    <div class="row even" id="performance">
+      <h4 style="color:#fefcff">performances 🌈</h4>
+      <% @performance.each do |vid| %>
+          <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
+            <a class="vid-card" href="<%= video_path(vid) %>" style="background-image: url(<%= image_path vid.thumbnail, style: "width: 100%;"%>)">
+            </a>
+              <p><%= vid.title %></p>
+          </div>
+      <% end %>
+    </div>
+    <div class="row odd" id="time-sculptures">
+      <h4 style="color:#fefcff">time sculptures 🌷</h4>
       <% @time_sculptures.each do |vid| %>
           <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
               <a href="<%= video_path(vid) %>" class="vid-card" style="background-image: url(<%= image_path vid.thumbnail, style: "width: 100%;"%>);">
@@ -20,19 +30,9 @@
           </div>
       <% end %>
     </div>
-    <div class="row" id="shitposts">
-      <h4 style="color:#fefcff">shitposts</h4>
+    <div class="row even" id="shitposts">
+      <h4 style="color:#fefcff">shitposts 💯</h4>
       <% @shitposts.each do |vid| %>
-          <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
-            <a class="vid-card" href="<%= video_path(vid) %>" style="background-image: url(<%= image_path vid.thumbnail, style: "width: 100%;"%>)">
-            </a>
-              <p><%= vid.title %></p>
-          </div>
-      <% end %>
-    </div>
-    <div class="row" id="performance">
-      <h4 style="color:#fefcff">performance</h4>
-      <% @performance.each do |vid| %>
           <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
             <a class="vid-card" href="<%= video_path(vid) %>" style="background-image: url(<%= image_path vid.thumbnail, style: "width: 100%;"%>)">
             </a>
