@@ -5,8 +5,5 @@
   <div class="description">
     <p style="color:#fefcff"><%= @video.description %></p>
   </div>
-  <ul class="list-inline">
-    <li><%= link_to "Back", videos_path, class: "btn-large" %></li>
-    <li><%= link_to "Home", home_path, class: "btn-large" %></li>
-  </ul>
+  <%= render 'components/footer-nav' %>
 </div>
