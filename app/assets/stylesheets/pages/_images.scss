@@ -2,10 +2,21 @@
 }
 
 .image-card {
+  padding-top: 25px;
   height: 280px;
   width: 370px;
   margin: 10px;
-  background-size: 100%;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  p {
+    font-size: 24px;
+  }
+}
+
+.image-card:hover {
+  opacity: 0.8;
 }
 
 .image-row {
