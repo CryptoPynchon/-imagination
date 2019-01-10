@@ -16,7 +16,10 @@
 }
 
 .image-card:hover {
-  opacity: 0.8;
+  background-size: cover;
+  p {
+    display: none;
+  }
 }
 
 .image-row {
@@ -28,11 +31,32 @@
   background-image: url("https://i.imgur.com/XQBS2ZK.jpg");
 }
 
+#photos-card:hover {
+  background-image: url("https://i.imgur.com/thb8znE.jpg");
+}
+
 #graphics-card {
   background-image: url("https://i.imgur.com/OVaBq2f.jpg");
   p {
     color: black;
   }
+  background-size: 100%;
+}
+
+#graphics-card:hover {
+  background-image: url("https://i.imgur.com/C4old2z.jpg");
+  background-position: center;
+}
+
+#gpg-card {
+  background-image: url("https://i.imgur.com/ab4IsH1.jpg");
+  background-size: cover;
+  background-position: 40%;
+}
+
+#gpg-card:hover {
+  background-image: url("https://i.imgur.com/QmFXHI1.jpg");
+  background-size: 100%;
 }
 
 #drawings-card {

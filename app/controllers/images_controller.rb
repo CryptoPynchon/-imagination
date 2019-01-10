@@ -12,4 +12,7 @@ class ImagesController < ApplicationController
     @graphics = Photograph.where("category = 'graphic'")
     @graphics
   end
+
+  def gals_point_guns
+  end
 end

@@ -12,6 +12,8 @@ Rails.application.routes.draw do
   get '/photos', to: 'images#photos'
   get 'images/graphics', to: 'images#graphics'
   get '/graphics', to: 'images#graphics'
+  get 'images/gals-point-guns', to: 'images#gals_point_guns'
+  get '/gals-point-guns', to: 'images#gals_point_guns'
   get 'writings', to: 'pages#writings'
   get 'pages/writings', to: 'pages#writings'
   resources :videos, only: [:index, :show]
