@@ -4,6 +4,10 @@
   <iframe width="560" height="315" src="<%= @video.url %>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   <div class="description">
     <p style="color:#fefcff"><%= @video.description %></p>
+    <% if @video.title = "Fractal Violence" %>
+      <img src="https://i.imgur.com/Gaww872.gifv" alt="fractal">
+    <% else puts "it was predestined that you'd read this" %>
+    <% end %>
   </div>
   <%= render 'components/footer-nav' %>
 </div>
