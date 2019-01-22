@@ -4,6 +4,11 @@
   <iframe width="560" height="315" src="<%= @video.url %>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   <div class="description">
     <p style="color:#fefcff"><%= @video.description %></p>
+    <% if @video.doc %>
+      <p style="color:#fefcff"><%= link_to "PDF", @video.doc, target: "_blank" %></p>
+    <% else %>
+      <%= puts "Without cells interlinked..." %>
+    <% end %>
   <% if @video.title == "Fractal Violence" %>
       <%= image_tag "https://i.imgur.com/Gaww872.gif", width: "250px" %>
   <% else puts "no peeking" %>
