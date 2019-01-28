@@ -3,7 +3,12 @@
   <h5 style="color:#fefcff"><%= @video.subtitle %></h5>
   <iframe width="560" height="315" src="<%= @video.url %>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   <div class="description">
-    <p style="color:#fefcff"><%= @video.description %></p>
+    <% if @video.title == "OM - LILITH Promo" %>
+      <%= link_to "enlightenment", @video.description, target: "_blank" %>
+      <%= image_tag "link-symbol.svg", width: "10px" %>
+    <% else %>
+      <p style="color:#fefcff"><%= @video.description %></p>
+    <% end %>
     <% if @video.doc %>
       <p style="color:#fefcff"><%= link_to "PDF", @video.doc, target: "_blank" %></p>
     <% else %>
@@ -11,6 +16,17 @@
     <% end %>
   <% if @video.title == "Fractal Violence" %>
       <%= image_tag "https://i.imgur.com/Gaww872.gif", width: "250px" %>
+    <% elsif @video.title == "Images I Have Liked On Twitter From 2012 to 2018" %>
+    <p>
+      1. This is what life will be like for many people in the near future.
+      It already is like this if you think about it.
+      <br>
+      Whether by VR pod or brain chip, we will choose to lose ourselves in a quasar of random experiences and concepts. Schizophrenic omniscience.
+      <br>
+      <br>
+      2. Simply by accumulating material, patterns and recurrent themes of someone’s personality will naturally emerge before you.
+      What can you discern?
+    </p>
   <% else puts "no peeking" %>
   <% end %>
   </div>
