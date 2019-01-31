@@ -1,0 +1,43 @@
+<div class="description">
+  <h4>Writing poetry by thinking up fictional albums</h4>
+  <p>For now the poems are just the tracklists but I plan on giving them depth by actually writing lyrics to each song. Stay tuned.</p>
+</div>
+<ul class="record-store">
+  <li>
+    <%= link_to 'fake-albums/butane' do %>
+      <div class="record col-xs-12 col-sm-6 col-md-3 col-lg-2" id="butane">
+        <h4>Butane by Wire Static</h4>
+        <h5>Alt-Rock</h5>
+        <%= image_tag "https://i.imgur.com/at6hNYF.png", width: "460px"; %>
+    <% end %>
+  </li>
+  <li>
+    <%= link_to 'fake-albums/porta-xan' do %>
+      <div class="record col-xs-12 col-sm-6 col-md-3 col-lg-2" id="porta-xan">
+        <h4>Porta Xan by lil $leepy</h4>
+        <h5>Soundcloud Rap</h5>
+        <%= image_tag "https://i.imgur.com/uOWK2CP.jpg", width: "420px" %>
+      </div>
+    <% end %>
+  </li>
+  <li>
+    <%= link_to 'fake-albums/pleasant-surprise' do %>
+      <div class="record col-xs-12 col-sm-6 col-md-3 col-lg-2" id="pleasant-surprise">
+        <h4>Pleasant Surprise by Symmetry Licker</h4>
+        <h5>Plunderphonics/IDM</h5>
+        <%= image_tag "https://i.imgur.com/Rk53JMo.jpg", width: "420px" %>
+      </div>
+    <% end %>
+  </li>
+  <li>
+    <%= link_to 'fake-albums/cookies' do %>
+      <div class="record col-xs-12 col-sm-6 col-md-3 col-lg-2" id="cookies">
+        <h4>Cookies are Media by Jenny Nicholson</h4>
+        <h5>Baroque Pop</h5>
+        <%= image_tag "https://i.imgur.com/3C05EFa.jpg", width: "420px" %>
+      </div>
+    <% end %>
+  </li>
+</ul>
+
+<%= render 'components/footer-nav' %>

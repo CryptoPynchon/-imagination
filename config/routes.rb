@@ -16,6 +16,14 @@ Rails.application.routes.draw do
   get '/gals-point-guns', to: 'images#gals_point_guns'
   get 'writings', to: 'pages#writings'
   get 'pages/writings', to: 'pages#writings'
+  get 'writings/fake-albums', to: 'writings#fake_albums'
+  get 'fake-albums', to: 'writings#fake_albums'
+  get 'writings/word-salad', to: 'writings#word_salad'
+  get 'word-salad', to: 'writings#word_salad'
+  get '/fake-albums/butane', to: 'writings#butane'
+  get 'fake-albums/porta-xan', to: 'writings#porta_xan'
+  get 'fake-albums/pleasant-surprise', to: 'writings#pleasant_surprise'
+  get 'fake-albums/cookies', to: 'writings#cookies'
   resources :videos, only: [:index, :show]
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

@@ -15,6 +15,9 @@ class PagesController < ApplicationController
   def writings
   end
 
+  def projects
+  end
+
   private
 
   def disable_nav

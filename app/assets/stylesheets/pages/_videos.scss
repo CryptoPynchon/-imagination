@@ -24,6 +24,8 @@ h4 {
   height: 200px;
   border-radius: 1px;
   margin: 15px 10px;
+  border: 3px;
+  border-color: white;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
   display: flex;
   align-items: center;
@@ -37,6 +39,7 @@ h4 {
 
 .vid-card:hover {
   opacity: 0.8;
+  text-color: #e28ef9;
 }
 
 ul {

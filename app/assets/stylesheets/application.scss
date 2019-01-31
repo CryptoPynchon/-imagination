@@ -17,6 +17,7 @@
 @import "pages/videos";
 @import "videos/index";
 @import "images/index";
+@import "writings/index";
 
 // Place all the styles related to the pages controller here.
 // They will automatically be included in application.css.
@@ -28,6 +29,7 @@
   text-align: center;
 }
 
+
 body {
   padding-bottom: 50px;
 }
@@ -38,17 +40,13 @@ body {
 
 a:hover {
   text-decoration: none;
-  color: #e28ef9;
+  color: #fcbcff !important;
   opacity: 0.8;
-}
-
-p:hover {
-  text-decoration: none;
 }
 
 html, body {
   margin: 0;
-  background-color: #041526;
+  background-color: #000000;
 }
 
 .row {
@@ -60,10 +58,6 @@ html, body {
   a {
     color: white;
     text-decoration: none;
-  }
-
-  a:hover {
-    color: black;
   }
 }
 /* Build your own button classes ! */
