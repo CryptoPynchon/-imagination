@@ -14,6 +14,8 @@ Rails.application.routes.draw do
   get '/graphics', to: 'images#graphics'
   get 'images/gals-point-guns', to: 'images#gals_point_guns'
   get '/gals-point-guns', to: 'images#gals_point_guns'
+  get 'images/rhyparography', to: 'images#rhyparography'
+  get 'rhyparography', to: 'images#rhyparography'
   get 'writings', to: 'pages#writings'
   get 'pages/writings', to: 'pages#writings'
   get 'writings/fake-albums', to: 'writings#fake_albums'
