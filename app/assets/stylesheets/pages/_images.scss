@@ -68,8 +68,13 @@
 }
 
 #rhyparography-card {
-  background-image: url("https://i.imgur.com/uoJ3h7d.jpg");
+  background-image: url("https://i.imgur.com/PxZtiaL.jpg");
   p {
     color: black;
   }
+}
+
+#rhyparography-card:hover {
+  background-image: url("https://i.imgur.com/uoJ3h7d.jpg");
+  background-size: 110%
 }
