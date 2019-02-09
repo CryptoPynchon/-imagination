@@ -4,7 +4,7 @@
 .image-card {
   padding-top: 25px;
   height: 280px;
-  width: 370px;
+  width: 420px;
   margin: 10px;
   background-size: cover;
   display: flex;
@@ -23,8 +23,9 @@
 }
 
 .image-row {
+  padding: 48px;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 #photos-card {
@@ -46,7 +47,8 @@
 
 #graphics-card:hover {
   background-image: url("https://i.imgur.com/C4old2z.jpg");
-  background-position: center;
+  background-position: 50% 80%;
+  background-size: 90%;
 }
 
 #gpg-card {
@@ -57,7 +59,7 @@
 
 #gpg-card:hover {
   background-image: url("https://i.imgur.com/QmFXHI1.jpg");
-  background-size: 100%;
+  background-size: 90%;
 }
 
 #drawings-card {
@@ -76,5 +78,5 @@
 
 #rhyparography-card:hover {
   background-image: url("https://i.imgur.com/uoJ3h7d.jpg");
-  background-size: 110%
+  background-position: 0% -40%;
 }
