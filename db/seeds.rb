@@ -84,5 +84,6 @@ Photograph.create(url:"https://i.imgur.com/oYXJh8X.jpg", caption: "blood on pale
 Photograph.create(url: "https://i.imgur.com/HAuZrlY.jpg", caption: "succubus", category: "graphic")
 Photograph.create(url: "https://i.imgur.com/O5XHzVT.png", caption: "programmatically-generated beastie boys image", category: "graphic")
 Photograph.create(url: "https://i.imgur.com/PGj5ld2.jpg", caption: "branches: divine structure", category: "graphic")
+Photograph.create(url: "https://i.imgur.com/vddyosx.jpg", caption: "OM Tee", category: "graphic")
 Photograph.create(url:"https://i.imgur.com/ppnS07Z.gif", caption: "'real sex'... shouldn't that be a tautology? - datamoshed image", category: "graphic")
 puts "Cortana, take us home."
