@@ -29,6 +29,12 @@
   text-align: center;
 }
 
+*::selection {
+  background: #FFAEF4; /* WebKit/Blink Browsers */
+}
+*::-moz-selection {
+  background: #FFAEF4; /* Gecko Browsers */
+}
 
 body {
   padding-bottom: 50px;
@@ -40,7 +46,7 @@ body {
 
 a:hover {
   text-decoration: none;
-  color: #fcbcff !important;
+  color: #FFAEF4 !important;
   opacity: 0.8;
 }
 

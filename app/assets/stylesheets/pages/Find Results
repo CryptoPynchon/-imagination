@@ -1,0 +1,101 @@
+Searching 182 files for "hover"
+
+/Users/alexander/code/CryptoPynchon/ imagination/app/assets/stylesheets/application.scss:
+   45  }
+   46
+   47: a:hover {
+   48    text-decoration: none;
+   49    color: #fcbcff !important;
+
+/Users/alexander/code/CryptoPynchon/ imagination/app/assets/stylesheets/components/_btn-large.scss:
+    7    opacity: 0.6;
+    8  }
+    9: .btn-large:hover {
+   10    opacity: 1;
+   11    text-decoration: none;
+
+/Users/alexander/code/CryptoPynchon/ imagination/app/assets/stylesheets/components/_card.scss:
+   22    }
+   23
+   24:   a:hover {
+   25      color: black;
+   26      text-decoration: none;
+   ..
+   33  }
+   34
+   35: .card:hover {
+   36    opacity: 0.8;
+   37    text-decoration: none;
+
+/Users/alexander/code/CryptoPynchon/ imagination/app/assets/stylesheets/components/_navbar.scss:
+   66  }
+   67
+   68: /* Add a dark background on topnav links and the dropdown button on hover */
+   69: .topnav a:hover, .dropdown:hover .dropbtn {
+   70    background-color: #555;
+   71    color: white;
+   72  }
+   73
+   74: /* Add a grey background to dropdown links on hover */
+   75: .dropdown-content a:hover {
+   76    background-color: #ddd;
+   77    color: black;
+   ..
+   79
+   80  /* Show the dropdown menu when the user moves the mouse over the dropdown button */
+   81: .dropdown:hover .dropdown-content {
+   82    display: block;
+   83  }
+
+/Users/alexander/code/CryptoPynchon/ imagination/app/assets/stylesheets/pages/_images.scss:
+   16  }
+   17
+   18: .image-card:hover {
+   19    background-size: cover;
+   20    p {
+   ..
+   33  }
+   34
+   35: #photos-card:hover {
+   36    background-image: url("https://i.imgur.com/thb8znE.jpg");
+   37    background-position: 45%;
+   ..
+   46  }
+   47
+   48: #graphics-card:hover {
+   49    background-image: url("https://i.imgur.com/C4old2z.jpg");
+   50    background-position: 50% 80%;
+   ..
+   58  }
+   59
+   60: #gpg-card:hover {
+   61    background-image: url("https://i.imgur.com/QmFXHI1.jpg");
+   62    background-size: 90%;
+   ..
+   77  }
+   78
+   79: #rhyparography-card:hover {
+   80    background-image: url("https://i.imgur.com/uoJ3h7d.jpg");
+   81    background-position: 0% -40%;
+
+/Users/alexander/code/CryptoPynchon/ imagination/app/assets/stylesheets/pages/_music.scss:
+   11  }
+   12
+   13: #aw-card:hover {
+   14    background: image-url("annihilation.png");
+   15    background-size: cover;
+   ..
+   28  }
+   29
+   30: #om-card:hover {
+   31    background: image-url('OM_BLUR.jpg');
+   32    background-size: cover;
+
+/Users/alexander/code/CryptoPynchon/ imagination/app/assets/stylesheets/pages/_videos.scss:
+   38  }
+   39
+   40: .vid-card:hover {
+   41    opacity: 0.8;
+   42    text-color: #FEAFFF;
+
+18 matches across 7 files
