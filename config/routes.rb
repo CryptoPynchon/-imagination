@@ -26,6 +26,7 @@ Rails.application.routes.draw do
   get 'fake-albums/porta-xan', to: 'writings#porta_xan'
   get 'fake-albums/pleasant-surprise', to: 'writings#pleasant_surprise'
   get 'fake-albums/cookies', to: 'writings#cookies'
+  get '/moodring', to:'moodrings#index'
   resources :videos, only: [:index, :show]
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
